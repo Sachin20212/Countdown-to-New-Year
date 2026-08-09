@@ -71,11 +71,9 @@
         }
         .countdown #minute::before{
             content: "Hinutes";
-            left: -5px;
         }
         .countdown #second::before{
             content: "Seconds";
-            left: -5px;
         }
         @media (max-width: 1080px) {
             h2{
@@ -85,7 +83,24 @@
                 width: 100%;
             }
             .countdown div{
-                min-width: 40px;
+                min-width: 80px;
+            }
+            .countdown #day::before{
+                content: "Days";
+                left: 5px;
+            }
+            .countdown #hour::before{
+                content: "Hours";
+                left: 2px;
+            }
+            .countdown #minute::before{
+                content: "Hinutes";
+                left: -5px;
+            }
+            .countdown #second::before{
+                content: "Seconds";
+                left: -2px;
+                left: -5px;
             }
         }
     </style>
