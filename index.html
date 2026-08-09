@@ -41,7 +41,9 @@
         }
         .countdown div{
             margin: 0 25px;
-            width: 100px;
+            min-width: 100px;
+            width: 150px;
+            max-width: 600px;
             font-size: clamp(2.2rem, 2.9rem, 20vw);
             font-weight: 500;
             margin-top: -25px;
@@ -87,7 +89,7 @@
             }
             .countdown #day::before{
                 content: "Days";
-                left: 12px;
+                left: 14px;
             }
             .countdown #hour::before{
                 content: "Hours";
